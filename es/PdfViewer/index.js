@@ -101,7 +101,7 @@ var PdfViewer = /*#__PURE__*/function (_PureComponent) {
     });
 
     _defineProperty(_assertThisInitialized(_this), "goToPage", function (pageNumber) {
-      var pdfViewer = _this.state.pdfViewer;
+      var pdfViewer = _this?.state?.pdfViewer;
       pdfViewer.currentPageNumber = pageNumber;
     });
 

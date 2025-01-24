@@ -140,7 +140,7 @@ export var PdfPages = /*#__PURE__*/function (_React$Component) {
   };
 
   _proto.componentWillUnmount = function componentWillUnmount() {
-    var pdf = this.state.pdf;
+    var pdf = this?.state?.pdf;
     pdf && pdf.destroy();
     this.documentPromise && this.documentPromise.cancel();
     this.docViewer.removeEventListener('scroll', this.onScrollCheck);
